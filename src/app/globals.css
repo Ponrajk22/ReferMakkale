@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Simple color scheme - blue backgrounds get white text, white backgrounds get black text */
+:root {
+  --text-on-blue: #ffffff;
+  --text-on-white: #000000;
+  --primary-blue: #3b82f6;
+  --background-white: #ffffff;
+}
