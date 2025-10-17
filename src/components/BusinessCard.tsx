@@ -83,7 +83,7 @@ export default function BusinessCard({ business }: BusinessCardProps) {
               ✓ Verified
             </span>
           )}
-          {isOpen !== null && (
+          {isOpen !== null && Object.keys(business.hours).length > 0 && (
             <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${
               isOpen 
                 ? 'bg-green-100 text-green-800' 
