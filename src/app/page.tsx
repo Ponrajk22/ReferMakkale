@@ -3,6 +3,48 @@ import BusinessCard from '@/components/BusinessCard';
 import { getPopularCategories, getFeaturedBusinesses, getBusinessStats } from '@/lib/data';
 import Link from 'next/link';
 
+// Helper function to get appropriate emoji for category
+function getCategoryIcon(categoryName: string): string {
+  const iconMap: { [key: string]: string } = {
+    'real-estate-agents': '🏠',
+    'mortgage-broker': '💰',
+    'plumbers': '🔧',
+    'cabinet-maker-carpenter': '🔨',
+    'cleaners': '🧽',
+    'childcare-early-learning': '👶',
+    'electricians': '⚡',
+    'gutter-roofing-services': '🏠',
+    'aircon-evaporative': '❄️',
+    'car-mechanics-repairs': '🚗',
+    'landscaping-gardening': '🌱',
+    'painting-decorating': '🎨',
+    'tiling-flooring': '🏗️'
+  };
+  
+  // Try exact match first
+  if (iconMap[categoryName]) {
+    return iconMap[categoryName];
+  }
+  
+  // Try partial matches for common keywords
+  if (categoryName.includes('real-estate') || categoryName.includes('property')) return '🏠';
+  if (categoryName.includes('mortgage') || categoryName.includes('finance')) return '💰';
+  if (categoryName.includes('plumb')) return '🔧';
+  if (categoryName.includes('carpenter') || categoryName.includes('cabinet')) return '🔨';
+  if (categoryName.includes('clean')) return '🧽';
+  if (categoryName.includes('child') || categoryName.includes('daycare')) return '👶';
+  if (categoryName.includes('electric')) return '⚡';
+  if (categoryName.includes('roof') || categoryName.includes('gutter')) return '🏠';
+  if (categoryName.includes('aircon') || categoryName.includes('cooling')) return '❄️';
+  if (categoryName.includes('car') || categoryName.includes('mechanic')) return '🚗';
+  if (categoryName.includes('garden') || categoryName.includes('landscape')) return '🌱';
+  if (categoryName.includes('paint')) return '🎨';
+  if (categoryName.includes('tile') || categoryName.includes('floor')) return '🏗️';
+  
+  // Default fallback
+  return '💼';
+}
+
 export default function Home() {
   const popularCategories = getPopularCategories(8);
   const featuredBusinesses = getFeaturedBusinesses(6);
@@ -85,7 +127,7 @@ export default function Home() {
                   href={`/category/${category.slug}`}
                   className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow text-center group"
                 >
-                  <div className="text-4xl mb-4">{category.icon}</div>
+                  <div className="text-4xl mb-4">{getCategoryIcon(category.id)}</div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600">
                     {category.name}
                   </h3>
