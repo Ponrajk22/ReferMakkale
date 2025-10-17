@@ -1,0 +1,148 @@
+{
+  "last_updated": "2025-10-17T17:45:48.075891",
+  "categories": [
+    {
+      "id": "aircon-evaporative",
+      "name": "Aircon/Evaporative",
+      "localName": "",
+      "slug": "aircon-evaporative",
+      "description": "Aircon/Evaporative services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 1
+    },
+    {
+      "id": "car-mechanics-and-repairs",
+      "name": "Car Mechanics & Repairs",
+      "localName": "",
+      "slug": "car-mechanics-and-repairs",
+      "description": "Car Mechanics & Repairs services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 1
+    },
+    {
+      "id": "cleaners",
+      "name": "Cleaners",
+      "localName": "",
+      "slug": "cleaners",
+      "description": "Cleaners services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 2
+    },
+    {
+      "id": "mortgage-broker",
+      "name": "Mortgage Broker",
+      "localName": "",
+      "slug": "mortgage-broker",
+      "description": "Mortgage Broker services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 4
+    },
+    {
+      "id": "real-estate-agents",
+      "name": "Real Estate Agents",
+      "localName": "",
+      "slug": "real-estate-agents",
+      "description": "Real Estate Agents services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 5
+    },
+    {
+      "id": "childcare-and-early-learning",
+      "name": "Childcare & Early Learning",
+      "localName": "",
+      "slug": "childcare-and-early-learning",
+      "description": "Childcare & Early Learning services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 2
+    },
+    {
+      "id": "accountants",
+      "name": "Accountants",
+      "localName": "",
+      "slug": "accountants",
+      "description": "Accountants services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 1
+    },
+    {
+      "id": "plumbers",
+      "name": "Plumbers",
+      "localName": "",
+      "slug": "plumbers",
+      "description": "Plumbers services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 3
+    },
+    {
+      "id": "electricians",
+      "name": "Electricians",
+      "localName": "",
+      "slug": "electricians",
+      "description": "Electricians services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 2
+    },
+    {
+      "id": "cabinet-maker---carpenter",
+      "name": "Cabinet Maker / Carpenter",
+      "localName": "",
+      "slug": "cabinet-maker---carpenter",
+      "description": "Cabinet Maker / Carpenter services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 3
+    },
+    {
+      "id": "removalists",
+      "name": "Removalists",
+      "localName": "",
+      "slug": "removalists",
+      "description": "Removalists services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 1
+    },
+    {
+      "id": "gutter-and-roofing-services",
+      "name": "Gutter & roofing Services",
+      "localName": "",
+      "slug": "gutter-and-roofing-services",
+      "description": "Gutter & roofing Services services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 2
+    },
+    {
+      "id": "it-and-tech-support",
+      "name": "IT & Tech Support",
+      "localName": "",
+      "slug": "it-and-tech-support",
+      "description": "IT & Tech Support services and businesses",
+      "icon": "briefcase",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 1
+    }
+  ]
+}

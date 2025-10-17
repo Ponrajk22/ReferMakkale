@@ -1,0 +1,849 @@
+{
+  "last_updated": "2025-10-17T17:45:48.071457",
+  "businesses": [
+    {
+      "id": "maddy",
+      "name": "Maddy",
+      "category": "aircon-evaporative",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0430283034"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Aircon/Evaporative"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Sai Aircon Systems"
+    },
+    {
+      "id": "bhavesh-mehta",
+      "name": "Bhavesh Mehta",
+      "category": "car-mechanics-and-repairs",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0430788548"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Car Mechanics & Repairs"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Bhavesh Mehta - Car Mechanics & Repairs"
+    },
+    {
+      "id": "katie",
+      "name": "Katie",
+      "category": "cleaners",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0407540997"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Cleaners"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Katie - Cleaners"
+    },
+    {
+      "id": "gauri",
+      "name": "Gauri",
+      "category": "cleaners",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0450715454"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Cleaners"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Gauri - Cleaners"
+    },
+    {
+      "id": "suvidh-arora",
+      "name": "Suvidh Arora",
+      "category": "mortgage-broker",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0458872992"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Mortgage Broker"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Exceller8 Financial"
+    },
+    {
+      "id": "sridhar-tummalapalli",
+      "name": "Sridhar Tummalapalli",
+      "category": "mortgage-broker",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0402184166"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Mortgage Broker"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Affluence Financials"
+    },
+    {
+      "id": "suneet",
+      "name": "Suneet",
+      "category": "real-estate-agents",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0433002485"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Real Estate Agents"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Stockdale and Leggo"
+    },
+    {
+      "id": "mark",
+      "name": "Mark",
+      "category": "real-estate-agents",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0425400600"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Real Estate Agents"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Ray White"
+    },
+    {
+      "id": "bobby-lakra",
+      "name": "Bobby Lakra",
+      "category": "real-estate-agents",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0417519316"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Real Estate Agents"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "FirstNational Real Estate"
+    },
+    {
+      "id": "jdpatel",
+      "name": "JDPatel",
+      "category": "real-estate-agents",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0423664786"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Real Estate Agents"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Reliance Real Estate"
+    },
+    {
+      "id": "krupa-vachchani",
+      "name": "Krupa Vachchani",
+      "category": "childcare-and-early-learning",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0411955843"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Childcare & Early Learning"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Learn & grow outside school care"
+    },
+    {
+      "id": "vinita",
+      "name": "Vinita",
+      "category": "childcare-and-early-learning",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0415932236"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Childcare & Early Learning"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Vinita's day care"
+    },
+    {
+      "id": "manu-samriti",
+      "name": "Manu Samriti",
+      "category": "accountants",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "038386 7410"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Accountants"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Pointax"
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel",
+      "category": "plumbers",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0401496570"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Plumbers"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Daniel Plumbing(Extermely expensive, do not use unless very urgent)"
+    },
+    {
+      "id": "nathan",
+      "name": "Nathan",
+      "category": "plumbers",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0404803333"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Plumbers"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "NLK Plumbing"
+    },
+    {
+      "id": "dominic",
+      "name": "Dominic",
+      "category": "electricians",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0449638165"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Electricians"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Dominic"
+    },
+    {
+      "id": "rhys",
+      "name": "Rhys",
+      "category": "electricians",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0412958994"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Electricians"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Rhys Electrician"
+    },
+    {
+      "id": "arek",
+      "name": "Arek",
+      "category": "cabinet-maker---carpenter",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0413578687"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Cabinet Maker / Carpenter"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Armax Home Systems"
+    },
+    {
+      "id": "sunil",
+      "name": "Sunil",
+      "category": "cabinet-maker---carpenter",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0468444591"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Cabinet Maker / Carpenter"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Sunil - Cabinet Maker / Carpenter"
+    },
+    {
+      "id": "omar",
+      "name": "Omar",
+      "category": "cabinet-maker---carpenter",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0413195365"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Cabinet Maker / Carpenter"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Omar - Cabinet Maker / Carpenter"
+    },
+    {
+      "id": "gerard",
+      "name": "Gerard",
+      "category": "removalists",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0405405095"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Removalists"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Mover FB Marketplace Purchases"
+    },
+    {
+      "id": "umesh",
+      "name": "Umesh",
+      "category": "gutter-and-roofing-services",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0425 006 900"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Gutter & roofing Services"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Tip Top Services Umesh"
+    },
+    {
+      "id": "lisandro-roofer",
+      "name": "Lisandro Roofer",
+      "category": "gutter-and-roofing-services",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0425 797 779",
+        "website": "https://www.highqualityroofingrestoration.com.au/"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Gutter & roofing Services"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "High Quality Roofing Restoration and Repairs"
+    },
+    {
+      "id": "oznova",
+      "name": "OzNova",
+      "category": "it-and-tech-support",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "048 905 9797",
+        "website": "https://oznova.com.au/"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "IT & Tech Support"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "AI, Automation and Data - Mobile Apps and IT Services"
+    },
+    {
+      "id": "saptha",
+      "name": "Saptha",
+      "category": "real-estate-agents",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0421433136",
+        "website": "https://tenanttoowner.au"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Real Estate Agents"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Tenant to Owner (T2O) - Buyer's & Renter's Agency, Property Management"
+    },
+    {
+      "id": "arut-jothi",
+      "name": "Arut Jothi",
+      "category": "mortgage-broker",
+      "location": {
+        "address": "42 Victorking Drive, Point Cook",
+        "suburb": "42 Victorking Drive",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0422293246"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Mortgage Broker"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "National Finance Pty Ltd. Refinance, home loan, credit card, car loan and personal loan"
+    },
+    {
+      "id": "satheesh-kumar",
+      "name": "Satheesh Kumar",
+      "category": "mortgage-broker",
+      "location": {
+        "address": "Pointcook",
+        "suburb": "Pointcook",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0451743249"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Mortgage Broker"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "Satheesh Kumar - Mortgage Broker"
+    },
+    {
+      "id": "shaun",
+      "name": "Shaun",
+      "category": "plumbers",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0450944566",
+        "website": "https://www.pipesafe.com.au/"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Plumbers"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-10-17",
+      "updatedAt": "2025-10-17",
+      "createdBy": "google-sheets-sync",
+      "description": "PipeSafe Plumbing. Very good service and after service support."
+    }
+  ]
+}

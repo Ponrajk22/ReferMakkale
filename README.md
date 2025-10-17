@@ -1,98 +1,93 @@
-# ReferMakkale - Tamil Business Directory
+# ReferMakkale - Community Business Directory
 
-A modern, community-driven business directory for Tamil businesses in Melbourne, built with Next.js 15 and TypeScript.
+A community-driven business directory for families in Melbourne, powered by Google Sheets and automatically synced with GitHub Actions.
 
-## Features
+## 🚀 Features
 
-- **Clean, Simple Design**: Blue backgrounds with white text, white backgrounds with black text
-- **Mobile Responsive**: Tailwind CSS for optimal mobile experience
-- **Community Driven**: Built for Tamil families in Melbourne
-- **Search & Filter**: Easy business discovery
-- **Modern Tech Stack**: Next.js 15, TypeScript, Tailwind CSS
+- **Google Sheets Integration**: Business data is managed through a simple Google Sheet
+- **Automatic Sync**: Data is automatically updated every hour via GitHub Actions
+- **Community Driven**: Easy for community members to add/update businesses
+- **Multilingual Support**: Interface supports multiple languages
+- **Modern UI**: Built with Next.js 15, React 19, and Tailwind CSS
+- **Search & Filter**: Advanced search and filtering capabilities
+- **Responsive**: Works on all devices
 
-## Getting Started
+## 📊 Data Source
 
-### Prerequisites
+The application gets its data from a Google Sheet with the following structure:
 
-- Node.js 18+ (currently using v24.8.0)
-- npm or yarn
+| Column | Description | Example |
+|--------|-------------|---------|
+| Name | Business/Person name | Maddy |
+| Category | Service category | Aircon/Evaporative |
+| Business Description | Company/Service description | Sai Aircon Systems |
+| Phone | Contact phone | 0430283034 |
+| Website | Website URL | https://example.com |
+| Address | Physical address | 123 Main St, Melbourne |
+| Additional Info | Extra details | Very reliable service |
+| Review link | Link to reviews | See Reviews |
 
-### Installation
+## 🔧 Setup Instructions
 
-1. Install dependencies:
-```bash
-npm install
-```
+### Local Development
 
-2. Run the development server:
-```bash
-npm run dev
-```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/ReferMakkale.git
+   cd ReferMakkale
+   ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## Available Scripts
+3. **Set up environment variables**
+   ```bash
+   cp .env.template .env.local
+   ```
+   
+   Edit `.env.local` and add your Google Sheets credentials:
+   ```bash
+   GOOGLE_SHEETS_ID=your_google_sheets_id_here
+   GOOGLE_API_KEY=your_google_api_key_here
+   ```
+
+4. **Sync data from Google Sheets**
+   ```bash
+   python3 scripts/sync_data.py
+   ```
+
+5. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+6. **Open [http://localhost:3000](http://localhost:3000)**
+
+## 🛠 Available Scripts
 
 - `npm run dev` - Start development server
-- `npm run build` - Build for production (static export for GitHub Pages)
+- `npm run build` - Build for production
 - `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run deploy` - Build and prepare for GitHub Pages deployment
+- `python3 scripts/sync_data.py` - Manually sync data from Google Sheets
 
-## Deployment to GitHub Pages
+## 🎯 Contributing
 
-This project is configured for GitHub Pages deployment with automatic static export.
+1. **Add/Update businesses** directly in the Google Sheet
+2. **Report issues** via GitHub Issues
+3. **Submit improvements** via Pull Requests
 
-### Automatic Deployment (Recommended)
+## 📱 Categories Supported
 
-1. Push your code to GitHub
-2. Go to your repository settings
-3. Navigate to "Pages" section
-4. Select "GitHub Actions" as the source
-5. The workflow will automatically deploy on every push to main branch
+- **Services**: Plumbers, Electricians, Cleaners, etc.
+- **Automotive**: Car mechanics and repairs
+- **Financial**: Mortgage brokers, Accountants
+- **Real Estate**: Agents and property services
+- **Childcare**: Daycare and education services
+- **Technology**: IT and tech support
+- **Restaurants**: Food and dining (coming soon)
 
-### Manual Deployment
+---
 
-1. Build the static export:
-```bash
-npm run build
-```
-
-2. The static files will be generated in the `out/` directory
-
-3. Deploy the `out/` directory to GitHub Pages
-
-### GitHub Pages URL
-
-Your site will be available at: `https://[username].github.io/[repository-name]/`
-
-## Project Structure
-
-```
-src/
-├── app/
-│   ├── layout.tsx     # Root layout
-│   ├── page.tsx       # Home page
-│   └── globals.css    # Global styles
-├── components/        # Reusable components (to be added)
-└── lib/              # Utility functions (to be added)
-```
-
-## Tech Stack
-
-- **Framework**: Next.js 15 with App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Linting**: ESLint with Next.js config
-
-## Next Steps
-
-1. Add Google Sheets integration for business data
-2. Implement search functionality
-3. Create business detail pages
-4. Add category filtering
-5. Mobile optimization enhancements
-
-## Contributing
-
-This project is built for the Tamil community in Melbourne. Feel free to contribute with business listings and feature suggestions.
+**Made with ❤️ for the community in Melbourne**
