@@ -3,37 +3,6 @@ import Header from '@/components/Header';
 import { getAllCategories } from '@/lib/data';
 import { Category } from '@/types';
 
-// Helper function to get appropriate emoji for category
-function getCategoryIcon(categoryId: string): string {
-  const iconMap: Record<string, string> = {
-    'real-estate-agents': '🏠',
-    'mortgage-broker': '💰', 
-    'plumbers': '🔧',
-    'cabinet-maker---carpenter': '🔨',
-    'cleaners': '🧽',
-    'childcare-and-early-learning': '👶',
-    'electricians': '⚡',
-    'gutter-and-roofing-services': '🏠',
-    'aircon-evaporative': '❄️',
-    'car-mechanics-and-repairs': '🚗',
-    'dentists': '🦷',
-    'health-and-wellness': '🏥',
-    'restaurants': '🍽️',
-    'cafes': '☕',
-    'beauty-and-personal-care': '💄',
-    'education': '📚',
-    'fitness': '💪',
-    'legal-services': '⚖️',
-    'financial-services': '💼',
-    'technology': '💻',
-    'transport': '🚌',
-    'retail': '🛍️',
-    'entertainment': '🎪'
-  };
-  
-  return iconMap[categoryId] || '💼';
-}
-
 export const metadata = {
   title: 'All Categories - ReferMakkale',
   description: 'Browse all business categories in Melbourne. Find exactly what you\'re looking for in your local community.',
@@ -77,7 +46,7 @@ export default function CategoriesPage() {
               className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow text-center group"
             >
               <div className="text-4xl mb-4">
-                {getCategoryIcon(category.id)}
+                {category.icon}
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600">
                 {category.name}

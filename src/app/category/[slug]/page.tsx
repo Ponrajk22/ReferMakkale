@@ -65,7 +65,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <div className="bg-white rounded-lg shadow-md p-8 mb-8">
           <div className="text-center">
             <div className="text-6xl mb-4">
-              {getCategoryIcon(category.id)}
+              {category.icon}
             </div>
             <h1 className="text-3xl font-bold text-gray-900 mb-4">{category.name}</h1>
             {category.localName && (
@@ -139,35 +139,4 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       </div>
     </div>
   );
-}
-
-// Helper function to get appropriate emoji for category
-function getCategoryIcon(categoryId: string): string {
-  const iconMap: Record<string, string> = {
-    'real-estate-agents': '🏠',
-    'mortgage-broker': '💰', 
-    'plumbers': '🔧',
-    'cabinet-maker---carpenter': '🔨',
-    'cleaners': '🧽',
-    'childcare-and-early-learning': '👶',
-    'electricians': '⚡',
-    'gutter-and-roofing-services': '🏠',
-    'aircon-evaporative': '❄️',
-    'car-mechanics-and-repairs': '🚗',
-    'dentists': '🦷',
-    'health-and-wellness': '🏥',
-    'restaurants': '🍽️',
-    'cafes': '☕',
-    'beauty-and-personal-care': '💄',
-    'education': '📚',
-    'fitness': '💪',
-    'legal-services': '⚖️',
-    'financial-services': '💼',
-    'technology': '💻',
-    'transport': '🚌',
-    'retail': '🛍️',
-    'entertainment': '🎪'
-  };
-  
-  return iconMap[categoryId] || '💼';
 }
