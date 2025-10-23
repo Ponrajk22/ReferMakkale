@@ -6,9 +6,13 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch: # Allow manual trigger
   push:
-    branches: [main]
+    branches: [main, test, dev]
     paths: 
       - 'scripts/sync_data.py'
+
+permissions:
+  contents: write
+  actions: read
 
 jobs:
   sync-data:
@@ -20,6 +24,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -62,22 +67,25 @@ jobs:
     - name: Check for changes
       id: verify-changed-files
       run: |
+        git add data/ src/data/ || true
         if [ -n "$(git status --porcelain)" ]; then
           echo "changed=true" >> $GITHUB_OUTPUT
+          echo "Changes detected:"
+          git status --porcelain
         else
           echo "changed=false" >> $GITHUB_OUTPUT
+          echo "No changes detected"
         fi
     
     - name: Commit and push changes
       if: steps.verify-changed-files.outputs.changed == 'true'
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add data/
-        git commit -m "🔄 Auto-sync: Update business data from Google Sheets"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: '🔄 Auto-sync: Update business data from Google Sheets'
+        file_pattern: 'data/*.json src/data/*.json'
+        commit_user_name: 'github-actions[bot]'
+        commit_user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
     
     - name: Create summary
       run: |

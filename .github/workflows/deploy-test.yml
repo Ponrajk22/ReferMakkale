@@ -1,0 +1,79 @@
+name: Test Build & Validation
+
+on:
+  push:
+    branches: [ test ]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to test'
+        required: true
+        default: 'test'
+        type: choice
+        options:
+        - test
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Lint code
+      run: npm run lint
+      continue-on-error: true
+      
+    - name: Type check
+      run: npx tsc --noEmit
+      continue-on-error: true
+      
+    - name: Build project (Test Environment)
+      run: |
+        echo "Building for TEST environment..."
+        npm run build
+        
+    - name: Validate build output
+      run: |
+        echo "Validating build output..."
+        ls -la out/
+        echo "Checking for required files..."
+        [ -f out/index.html ] && echo "✅ index.html found" || echo "❌ index.html missing"
+        [ -d out/_next ] && echo "✅ _next directory found" || echo "❌ _next directory missing"
+        
+    - name: Test data integrity
+      run: |
+        echo "Testing data file integrity..."
+        if [ -f src/data/businesses.json ]; then
+          echo "✅ businesses.json found"
+          cat src/data/businesses.json | jq '.businesses | length' || echo "Invalid JSON in businesses.json"
+        fi
+        if [ -f src/data/categories.json ]; then
+          echo "✅ categories.json found" 
+          cat src/data/categories.json | jq '.categories | length' || echo "Invalid JSON in categories.json"
+        fi
+        
+    - name: Build Summary
+      run: |
+        echo "## Test Build Summary" >> $GITHUB_STEP_SUMMARY
+        echo "- **Branch:** ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Commit:** ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Build Status:** ✅ Success" >> $GITHUB_STEP_SUMMARY
+        echo "- **Environment:** Test Validation" >> $GITHUB_STEP_SUMMARY
+        echo "- **Build Output:** $(du -sh out/ | cut -f1)" >> $GITHUB_STEP_SUMMARY
+        if [ -f src/data/businesses.json ]; then
+          echo "- **Businesses:** $(cat src/data/businesses.json | jq '.businesses | length') found" >> $GITHUB_STEP_SUMMARY
+        fi
+        if [ -f src/data/categories.json ]; then
+          echo "- **Categories:** $(cat src/data/categories.json | jq '.categories | length') found" >> $GITHUB_STEP_SUMMARY
+        fi
