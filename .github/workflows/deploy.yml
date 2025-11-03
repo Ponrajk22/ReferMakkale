@@ -1,9 +1,17 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (Production)
 
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+        - production
 
 permissions:
   contents: read

@@ -152,6 +152,72 @@ def process_businesses(data):
 
 def process_categories(businesses):
     """Generate categories based on actual categories from the sheet"""
+    # Icon mapping for better category display
+    icon_map = {
+        'real-estate-agents': '🏠',
+        'mortgage-broker': '💰', 
+        'plumbers': '🔧',
+        'cabinet-maker---carpenter': '🔨',
+        'cleaners': '🧽',
+        'childcare-and-early-learning': '👶',
+        'electricians': '⚡',
+        'gutter-and-roofing-services': '🏠',
+        'aircon-evaporative': '❄️',
+        'car-mechanics-and-repairs': '🚗',
+        'dentists': '🦷',
+        'health-and-wellness': '🏥',
+        'restaurants': '🍽️',
+        'cafes': '☕',
+        'beauty-and-personal-care': '💄',
+        'education': '📚',
+        'fitness': '💪',
+        'legal-services': '⚖️',
+        'financial-services': '💼',
+        'technology': '💻',
+        'transport': '🚌',
+        'retail': '🛍️',
+        'entertainment': '🎪',
+        'construction': '🏗️',
+        'landscaping': '🌱',
+        'photography': '📸',
+        'catering': '🍽️',
+        'accounting': '📊',
+        'insurance': '🛡️',
+        'pet-services': '🐕',
+        'home-services': '🏡',
+        'automotive': '🚙',
+        'medical': '⚕️',
+        'tutoring': '📖',
+        'consulting': '💭'
+    }
+    
+    # Color mapping for variety
+    color_map = {
+        'real-estate-agents': '#3B82F6',
+        'mortgage-broker': '#10B981', 
+        'plumbers': '#F59E0B',
+        'cabinet-maker---carpenter': '#8B5CF6',
+        'cleaners': '#06B6D4',
+        'childcare-and-early-learning': '#F97316',
+        'electricians': '#EF4444',
+        'gutter-and-roofing-services': '#6B7280',
+        'aircon-evaporative': '#3B82F6',
+        'car-mechanics-and-repairs': '#DC2626',
+        'dentists': '#059669',
+        'health-and-wellness': '#7C3AED',
+        'restaurants': '#DC2626',
+        'cafes': '#92400E',
+        'beauty-and-personal-care': '#EC4899',
+        'education': '#2563EB',
+        'fitness': '#059669',
+        'legal-services': '#374151',
+        'financial-services': '#1F2937',
+        'technology': '#6366F1',
+        'transport': '#0891B2',
+        'retail': '#7C2D12',
+        'entertainment': '#BE185D'
+    }
+    
     # Extract unique categories from businesses
     category_counts = {}
     category_names = {}
@@ -167,14 +233,21 @@ def process_categories(businesses):
     for cat_slug, count in category_counts.items():
         if count > 0:  # Only include categories with businesses
             cat_name = category_names[cat_slug]
+            
+            # Generate better description
+            if 'service' not in cat_name.lower():
+                description = f"Find trusted {cat_name.lower()} in Melbourne. Quality services from verified local businesses."
+            else:
+                description = f"Find trusted {cat_name.lower()} in Melbourne. Quality offerings from verified local businesses."
+            
             categories.append({
                 'id': cat_slug,
                 'name': cat_name,
                 'localName': '',  # Not available in sheet
                 'slug': cat_slug,
-                'description': f'{cat_name} services and businesses',
-                'icon': 'briefcase',  # Default icon
-                'color': '#4ecdc4',  # Default color
+                'description': description,
+                'icon': icon_map.get(cat_slug, '💼'),  # Use mapped icon or default
+                'color': color_map.get(cat_slug, '#4ecdc4'),  # Use mapped color or default
                 'subcategories': [],  # Not available in sheet
                 'businessCount': count
             })
