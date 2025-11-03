@@ -5,7 +5,7 @@ export const businesses: Business[] = [
   {
     id: "saravana-bhavan-glen-waverley",
     name: "Saravana Bhavan",
-    nameInTamil: "சரவணா பவன்",
+    localName: "சரவணா பவன்",
     description: "Authentic South Indian vegetarian restaurant chain known for its traditional recipes and excellent service. Family-friendly atmosphere with a wide variety of dosas, idlis, and curries.",
     category: "restaurants",
     subcategory: "south-indian",
@@ -19,16 +19,14 @@ export const businesses: Business[] = [
     contact: {
       phone: "+61 3 9560 1234",
       email: "glenwaverley@saravanabhavan.com.au",
-      website: "https://saravanabhavan.com.au"
-    },
-    socialMedia: {
+      website: "https://saravanabhavan.com.au",
       facebook: "https://facebook.com/saravanabhavan",
       instagram: "https://instagram.com/saravanabhavan"
     },
     rating: 4.5,
     reviewCount: 150,
     priceRange: "$$",
-    tamilOwned: true,
+    communityOwned: true,
     verified: true,
     languages: ["English", "Tamil", "Hindi"],
     tags: ["vegetarian", "halal", "family-friendly", "authentic"],
@@ -50,7 +48,7 @@ export const businesses: Business[] = [
         rating: 5,
         title: "Excellent Service",
         comment: "Excellent food and service! The dosas are crispy and the chutneys are perfect. Staff speaks Tamil which makes ordering easy.",
-        commentInTamil: "சிறந்த உணவு மற்றும் சேவை! தோசைகள் மிருதுவாக உள்ளன.",
+        localComment: "சிறந்த உணவு மற்றும் சேவை! தோசைகள் மிருதுவாக உள்ளன.",
         date: "2024-01-10",
         helpful: 3,
         verified: true
@@ -68,12 +66,13 @@ export const businesses: Business[] = [
       }
     ],
     createdAt: "2024-01-01",
-    updatedAt: "2024-01-15"
+    updatedAt: "2024-01-15",
+    createdBy: "admin"
   },
   {
     id: "tamil-medical-centre-clayton",
     name: "Tamil Medical Centre",
-    nameInTamil: "தமிழ் மருத்துவ மையம்",
+    localName: "தமிழ் மருத்துவ மையம்",
     description: "Comprehensive healthcare services with Tamil-speaking doctors. Specializing in general practice, pediatrics, and women's health.",
     category: "healthcare",
     subcategory: "medical-centers",
@@ -89,11 +88,10 @@ export const businesses: Business[] = [
       email: "info@tamilmedical.com.au",
       website: "https://tamilmedical.com.au"
     },
-    socialMedia: {},
     rating: 4.8,
     reviewCount: 89,
     priceRange: "$$",
-    tamilOwned: true,
+    communityOwned: true,
     verified: true,
     languages: ["English", "Tamil"],
     tags: ["bulk-billing", "family-practice", "pediatrics"],
@@ -110,20 +108,24 @@ export const businesses: Business[] = [
     reviews: [
       {
         id: "review-3",
-        authorName: "Kamala R.",
+        businessId: "tamil-medical-centre-clayton",
+        author: "Kamala R.",
         rating: 5,
+        title: "Excellent with children",
         comment: "Dr. Tamil is excellent with children. Very patient and explains everything in Tamil when needed.",
         date: "2024-01-08",
+        helpful: 2,
         verified: true
       }
     ],
     createdAt: "2023-12-15",
-    updatedAt: "2024-01-12"
+    updatedAt: "2024-01-12",
+    createdBy: "admin"
   },
   {
     id: "bharatha-tutorials-box-hill",
     name: "Bharatha Tutorials",
-    nameInTamil: "பாரத பயிற்சி மையம்",
+    localName: "பாரத பயிற்சி மையம்",
     description: "Tamil language and cultural education for children. Offering Tamil reading, writing, classical music, and dance classes.",
     category: "education",
     subcategory: "tutoring",
@@ -136,15 +138,13 @@ export const businesses: Business[] = [
     },
     contact: {
       phone: "+61 3 9899 9876",
-      email: "info@bharathatutorials.com.au"
-    },
-    socialMedia: {
+      email: "info@bharathatutorials.com.au",
       facebook: "https://facebook.com/bharathatutorials"
     },
     rating: 4.7,
     reviewCount: 45,
     priceRange: "$",
-    tamilOwned: true,
+    communityOwned: true,
     verified: true,
     languages: ["English", "Tamil"],
     tags: ["tamil-language", "cultural-education", "children"],
@@ -161,21 +161,25 @@ export const businesses: Business[] = [
     reviews: [
       {
         id: "review-4",
-        authorName: "Meera V.",
+        businessId: "bharatha-tutorials-box-hill",
+        author: "Meera V.",
         rating: 5,
+        title: "Great Tamil classes",
         comment: "My daughter loves the Tamil classes here. Teachers are very dedicated and patient.",
-        commentInTamil: "என் மகளுக்கு இங்கு தமிழ் வகுப்புகள் மிகவும் பிடிக்கும்.",
+        localComment: "என் மகளுக்கு இங்கு தமிழ் வகுப்புகள் மிகவும் பிடிக்கும்.",
         date: "2024-01-03",
+        helpful: 4,
         verified: true
       }
     ],
     createdAt: "2023-11-20",
-    updatedAt: "2024-01-10"
+    updatedAt: "2024-01-10",
+    createdBy: "admin"
   },
   {
     id: "krishna-sweets-dandenong",
     name: "Krishna Sweets",
-    nameInTamil: "கிருஷ்ணா இனிப்புகள்",
+    localName: "கிருஷ்ணா இனிப்புகள்",
     description: "Traditional South Indian sweets and snacks. Fresh laddu, mysore pak, and special occasion catering available.",
     category: "food-retail",
     subcategory: "sweets-snacks",
@@ -188,15 +192,13 @@ export const businesses: Business[] = [
     },
     contact: {
       phone: "+61 3 9791 2468",
-      email: "orders@krishnasweets.com.au"
-    },
-    socialMedia: {
+      email: "orders@krishnasweets.com.au",
       instagram: "https://instagram.com/krishnasweets"
     },
     rating: 4.3,
     reviewCount: 67,
     priceRange: "$",
-    tamilOwned: true,
+    communityOwned: true,
     verified: false,
     languages: ["English", "Tamil", "Telugu"],
     tags: ["traditional", "fresh", "catering"],
@@ -213,15 +215,19 @@ export const businesses: Business[] = [
     reviews: [
       {
         id: "review-5",
-        authorName: "Ravi K.",
+        businessId: "krishna-sweets-dandenong",
+        author: "Ravi K.",
         rating: 4,
+        title: "Good quality sweets",
         comment: "Good quality sweets, especially during festival seasons. Prices are reasonable.",
         date: "2023-12-28",
+        helpful: 1,
         verified: false
       }
     ],
     createdAt: "2023-10-05",
-    updatedAt: "2024-01-05"
+    updatedAt: "2024-01-05",
+    createdBy: "admin"
   }
 ];
 
@@ -229,110 +235,123 @@ export const categories: Category[] = [
   {
     id: "restaurants",
     name: "Restaurants",
-    nameInTamil: "உணவகங்கள்",
+    localName: "உணவகங்கள்",
     description: "Food and dining establishments",
     slug: "restaurants",
     icon: "utensils",
     color: "#ff6b6b",
+    businessCount: 15,
     subcategories: [
       {
         id: "south-indian",
         name: "South Indian",
-        nameInTamil: "தென்னிந்திய",
-        slug: "south-indian"
+        localName: "தென்னிந்திய",
+        slug: "south-indian",
+        description: "South Indian cuisine"
       },
       {
         id: "north-indian",
         name: "North Indian", 
-        nameInTamil: "வட இந்திய",
-        slug: "north-indian"
+        localName: "வட இந்திய",
+        slug: "north-indian",
+        description: "North Indian cuisine"
       },
       {
         id: "sri-lankan",
         name: "Sri Lankan",
-        nameInTamil: "இலங்கை",
-        slug: "sri-lankan"
+        localName: "இலங்கை",
+        slug: "sri-lankan",
+        description: "Sri Lankan cuisine"
       }
     ]
   },
   {
     id: "healthcare",
     name: "Healthcare",
-    nameInTamil: "மருத்துவம்",
+    localName: "மருத்துவம்",
     description: "Medical and health services",
     slug: "healthcare",
     icon: "heart",
     color: "#4ecdc4",
+    businessCount: 8,
     subcategories: [
       {
         id: "medical-centers",
         name: "Medical Centers",
-        nameInTamil: "மருத்துவ மையங்கள்",
-        slug: "medical-centers"
+        localName: "மருத்துவ மையங்கள்",
+        slug: "medical-centers",
+        description: "Medical centers and clinics"
       },
       {
         id: "dental",
         name: "Dental",
-        nameInTamil: "பல் மருத்துவம்",
-        slug: "dental"
+        localName: "பல் மருத்துவம்",
+        slug: "dental",
+        description: "Dental services"
       }
     ]
   },
   {
     id: "education",
     name: "Education",
-    nameInTamil: "கல்வி",
+    localName: "கல்வி",
     description: "Educational services and tutoring",
     slug: "education", 
     icon: "book",
     color: "#45b7d1",
+    businessCount: 12,
     subcategories: [
       {
         id: "tutoring",
         name: "Tutoring",
-        nameInTamil: "பயிற்சி",
-        slug: "tutoring"
+        localName: "பயிற்சி",
+        slug: "tutoring",
+        description: "Tutoring services"
       },
       {
         id: "language-schools",
         name: "Language Schools",
-        nameInTamil: "மொழி பள்ளிகள்",
-        slug: "language-schools"
+        localName: "மொழி பள்ளிகள்",
+        slug: "language-schools",
+        description: "Language learning schools"
       }
     ]
   },
   {
     id: "food-retail",
     name: "Food & Retail",
-    nameInTamil: "உணவு & விற்பனை",
+    localName: "உணவு & விற்பனை",
     description: "Grocery stores and food retail",
     slug: "food-retail",
     icon: "shopping-cart",
     color: "#f7b731",
+    businessCount: 6,
     subcategories: [
       {
         id: "sweets-snacks",
         name: "Sweets & Snacks",
-        nameInTamil: "இனிப்புகள் & தின்பண்டங்கள்",
-        slug: "sweets-snacks"
+        localName: "இனிப்புகள் & தின்பண்டங்கள்",
+        slug: "sweets-snacks",
+        description: "Sweets and snacks"
       },
       {
         id: "grocery",
         name: "Grocery",
-        nameInTamil: "மளிகை",
-        slug: "grocery"
+        localName: "மளிகை",
+        slug: "grocery",
+        description: "Grocery stores"
       }
     ]
   }
 ];
 
 export const suburbs: Suburb[] = [
-  { name: "Glen Waverley", state: "VIC", postcode: "3150", businessCount: 15 },
-  { name: "Clayton", state: "VIC", postcode: "3168", businessCount: 8 },
-  { name: "Box Hill", state: "VIC", postcode: "3128", businessCount: 12 },
-  { name: "Dandenong", state: "VIC", postcode: "3175", businessCount: 6 },
-  { name: "Springvale", state: "VIC", postcode: "3171", businessCount: 10 },
-  { name: "Noble Park", state: "VIC", postcode: "3174", businessCount: 4 },
-  { name: "Keysborough", state: "VIC", postcode: "3173", businessCount: 7 },
-  { name: "Casey", state: "VIC", postcode: "3199", businessCount: 9 }
+  { name: "Glen Waverley", postcode: "3150", businessCount: 15, popularCategories: ["restaurants", "healthcare"] },
+  { name: "Clayton", postcode: "3168", businessCount: 8, popularCategories: ["healthcare", "education"] },
+  { name: "Box Hill", postcode: "3128", businessCount: 12, popularCategories: ["education", "restaurants"] },
+  { name: "Dandenong", postcode: "3175", businessCount: 6, popularCategories: ["food-retail", "restaurants"] },
+  { name: "Springvale", postcode: "3171", businessCount: 10, popularCategories: ["restaurants", "food-retail"] },
+  { name: "Noble Park", postcode: "3174", businessCount: 4, popularCategories: ["restaurants"] },
+  { name: "Keysborough", postcode: "3173", businessCount: 7, popularCategories: ["healthcare", "education"] },
+  { name: "Casey", postcode: "3199", businessCount: 9, popularCategories: ["restaurants", "healthcare"] }
 ];
