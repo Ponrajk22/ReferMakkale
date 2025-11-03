@@ -51,3 +51,6 @@ jspm_packages/
 
 # Optional eslint cache
 .eslintcache
+
+# Project management
+TODO.md
