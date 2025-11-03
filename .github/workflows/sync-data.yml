@@ -79,15 +79,50 @@ jobs:
           echo "No changes detected"
         fi
     
-    - name: Commit and push changes
+    - name: Create Pull Request for data changes
       if: steps.verify-changed-files.outputs.changed == 'true'
-      uses: stefanzweifel/git-auto-commit-action@v5
+      uses: peter-evans/create-pull-request@v6
       with:
-        commit_message: '🔄 Auto-sync: Update business data from Google Sheets'
-        file_pattern: 'data/*.json src/data/*.json'
-        commit_user_name: 'github-actions[bot]'
-        commit_user_email: 'github-actions[bot]@users.noreply.github.com'
-        commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: '🔄 Auto-sync: Update business data from Google Sheets'
+        title: '🔄 Auto-sync: Update business data from Google Sheets'
+        body: |
+          ## 📊 Automated Data Sync
+          
+          This pull request contains updated business data synchronized from Google Sheets.
+          
+          ### Changes:
+          - Updated business listings
+          - Updated category information  
+          - Updated suburb data
+          
+          ### Sync Details:
+          - **Timestamp:** $(date)
+          - **Workflow:** ${{ github.workflow }}
+          - **Run ID:** ${{ github.run_id }}
+          
+          This PR was automatically created by the data sync workflow. Please review and merge if the changes look correct.
+        branch: data-sync-${{ github.run_number }}
+        delete-branch: true
+        labels: |
+          automated
+          data-sync
+        reviewers: Ponrajk22
+        assignees: Ponrajk22
+    
+    - name: Enable auto-merge for data sync PR
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        # Wait a moment for the PR to be created
+        sleep 5
+        # Get the PR number from the created PR
+        PR_NUMBER=$(gh pr list --head "data-sync-${{ github.run_number }}" --json number --jq '.[0].number')
+        if [ -n "$PR_NUMBER" ]; then
+          echo "Enabling auto-merge for PR #$PR_NUMBER"
+          gh pr merge $PR_NUMBER --auto --squash
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Create summary
       run: |
