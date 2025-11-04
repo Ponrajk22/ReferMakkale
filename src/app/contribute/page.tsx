@@ -20,7 +20,7 @@ export default function ContributePage() {
             Help Build Our Community
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            ReferMakkale grows stronger with your contributions. Join us in creating the most comprehensive Tamil business directory in Western Melbourne.
+            ReferMakkale grows stronger with your contributions. Join us in creating the most comprehensive business directory for our community in Western Melbourne.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function ContributePage() {
               <h3 className="text-xl font-semibold text-gray-900">Add a Business</h3>
             </div>
             <p className="text-gray-600 mb-4">
-              Know a Tamil business that's not listed? Help us expand our directory by adding new businesses.
+              Know a local business that's not listed? Help us expand our directory by adding new businesses.
             </p>
             <Link 
               href="/add-business"
@@ -79,7 +79,7 @@ export default function ContributePage() {
               <h3 className="text-xl font-semibold text-gray-900">Share Your Experience</h3>
             </div>
             <p className="text-gray-600 mb-4">
-              Help others discover great Tamil businesses by sharing your reviews and experiences.
+              Help others discover great local businesses by sharing your reviews and experiences.
             </p>
             <Link 
               href="/businesses"
@@ -100,7 +100,7 @@ export default function ContributePage() {
               <h3 className="text-xl font-semibold text-gray-900">Spread the Word</h3>
             </div>
             <p className="text-gray-600 mb-4">
-              Share ReferMakkale with friends, family, and social media to help more people discover Tamil businesses.
+              Share ReferMakkale with friends, family, and social media to help more people discover local businesses.
             </p>
             <div className="flex space-x-3">
               <button className="text-blue-600 hover:text-blue-700 font-medium">Share on Facebook</button>
@@ -119,7 +119,7 @@ export default function ContributePage() {
               <ul className="space-y-2 text-gray-600">
                 <li>• Provide accurate and up-to-date information</li>
                 <li>• Be respectful in reviews and comments</li>
-                <li>• Add businesses that serve the Tamil community</li>
+                <li>• Add businesses that serve our community</li>
                 <li>• Include proper contact details and addresses</li>
                 <li>• Use clear, appropriate business photos</li>
               </ul>
@@ -164,7 +164,7 @@ export default function ContributePage() {
         <div className="text-center mt-12 py-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">நன்றி (Thank You)!</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Your contributions help strengthen our Tamil community in Western Melbourne. 
+            Your contributions help strengthen our community in Western Melbourne. 
             Together, we're building something meaningful that connects businesses with families who need them.
           </p>
         </div>
@@ -174,7 +174,7 @@ export default function ContributePage() {
 }
 
 export const metadata = {
-  title: 'Contribute - ReferMakkale | Help Build Our Tamil Business Community',
-  description: 'Join the ReferMakkale community and help build the most comprehensive Tamil business directory in Western Melbourne. Add businesses, share reviews, and connect with your community.',
-  keywords: 'contribute, Tamil businesses, Western Melbourne, community, business directory, help',
+  title: 'Contribute - ReferMakkale | Help Build Our Business Community',
+  description: 'Join the ReferMakkale community and help build the most comprehensive business directory in Western Melbourne. Add businesses, share reviews, and connect with your community.',
+  keywords: 'contribute, local businesses, Western Melbourne, community, business directory, help',
 };
