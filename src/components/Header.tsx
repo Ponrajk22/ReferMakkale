@@ -37,9 +37,11 @@ export default function Header() {
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-4">
-            <Link
-              href="/add-business"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+            <Link 
+              href="https://docs.google.com/spreadsheets/d/1ZVk5ysTDmmGzITMk14NVexYN_sQhd7emS4hXSV43r9s/edit?gid=0#gid=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors"
             >
               Add Business
             </Link>

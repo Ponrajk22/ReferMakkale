@@ -34,7 +34,9 @@ export default function Home() {
                   Browse Businesses
                 </Link>
                 <Link
-                  href="/add-business"
+                  href="https://docs.google.com/spreadsheets/d/1ZVk5ysTDmmGzITMk14NVexYN_sQhd7emS4hXSV43r9s/edit?gid=0#gid=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
                 >
                   Add Your Business
@@ -186,7 +188,9 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/add-business"
+                href="https://docs.google.com/spreadsheets/d/1ZVk5ysTDmmGzITMk14NVexYN_sQhd7emS4hXSV43r9s/edit?gid=0#gid=0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
               >
                 Add a Business
@@ -222,7 +226,7 @@ export default function Home() {
                 <Link href="/businesses" className="text-gray-300 hover:text-white block">All Businesses</Link>
                 <Link href="/categories" className="text-gray-300 hover:text-white block">Categories</Link>
                 <Link href="/suburbs" className="text-gray-300 hover:text-white block">Suburbs</Link>
-                <Link href="/add-business" className="text-gray-300 hover:text-white block">Add Business</Link>
+                <Link href="https://docs.google.com/spreadsheets/d/1ZVk5ysTDmmGzITMk14NVexYN_sQhd7emS4hXSV43r9s/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white block">Add Business</Link>
               </div>
             </div>
             
