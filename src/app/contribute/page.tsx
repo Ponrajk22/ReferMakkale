@@ -40,7 +40,7 @@ export default function ContributePage() {
               Know a local business that's not listed? Add it directly to our Google Sheet and it will appear on the website after our next sync.
             </p>
             <a 
-              href="https://docs.google.com/spreadsheets/d/1KEyAjqMvSF_B4VWxgQctBYCDAUmFWb9Skkc5LJDhZWw/edit#gid=0"
+              href="https://docs.google.com/spreadsheets/d/1ZVk5ysTDmmGzITMk14NVexYN_sQhd7emS4hXSV43r9s/edit?gid=0#gid=0"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
@@ -150,7 +150,7 @@ export default function ContributePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://docs.google.com/spreadsheets/d/1KEyAjqMvSF_B4VWxgQctBYCDAUmFWb9Skkc5LJDhZWw/edit#gid=0"
+              href="https://docs.google.com/spreadsheets/d/1ZVk5ysTDmmGzITMk14NVexYN_sQhd7emS4hXSV43r9s/edit?gid=0#gid=0"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-md font-medium transition-colors"
