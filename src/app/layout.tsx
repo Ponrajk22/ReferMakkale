@@ -2,8 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'ReferMakkale - Tamil Business Directory',
-  description: 'A community-driven business directory for Tamil businesses in Melbourne',
+  title: 'ReferMakkale - Community Business Directory',
+  description: 'A community-driven business directory for local businesses in Melbourne',
 }
 
 export default function RootLayout({

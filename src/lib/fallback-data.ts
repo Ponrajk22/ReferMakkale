@@ -47,7 +47,7 @@ export const businesses: Business[] = [
         author: "Priya S.",
         rating: 5,
         title: "Excellent Service",
-        comment: "Excellent food and service! The dosas are crispy and the chutneys are perfect. Staff speaks Tamil which makes ordering easy.",
+        comment: "Excellent food and service! The dosas are crispy and the chutneys are perfect. Staff speaks multiple languages which makes ordering easy.",
         localComment: "சிறந்த உணவு மற்றும் சேவை! தோசைகள் மிருதுவாக உள்ளன.",
         date: "2024-01-10",
         helpful: 3,
@@ -70,10 +70,10 @@ export const businesses: Business[] = [
     createdBy: "admin"
   },
   {
-    id: "tamil-medical-centre-clayton",
-    name: "Tamil Medical Centre",
-    localName: "தமிழ் மருத்துவ மையம்",
-    description: "Comprehensive healthcare services with Tamil-speaking doctors. Specializing in general practice, pediatrics, and women's health.",
+    id: "community-medical-centre-clayton",
+    name: "Community Medical Centre",
+    localName: "சமூக மருத்துவ மையம்",
+    description: "Comprehensive healthcare services with multilingual doctors. Specializing in general practice, pediatrics, and women's health.",
     category: "healthcare",
     subcategory: "medical-centers",
     location: {
@@ -85,8 +85,8 @@ export const businesses: Business[] = [
     },
     contact: {
       phone: "+61 3 9544 5678",
-      email: "info@tamilmedical.com.au",
-      website: "https://tamilmedical.com.au"
+      email: "info@communitymedical.com.au",
+      website: "https://communitymedical.com.au"
     },
     rating: 4.8,
     reviewCount: 89,
@@ -108,11 +108,11 @@ export const businesses: Business[] = [
     reviews: [
       {
         id: "review-3",
-        businessId: "tamil-medical-centre-clayton",
+        businessId: "community-medical-centre-clayton",
         author: "Kamala R.",
         rating: 5,
         title: "Excellent with children",
-        comment: "Dr. Tamil is excellent with children. Very patient and explains everything in Tamil when needed.",
+        comment: "Dr. Singh is excellent with children. Very patient and explains everything in multiple languages when needed.",
         date: "2024-01-08",
         helpful: 2,
         verified: true
@@ -126,7 +126,7 @@ export const businesses: Business[] = [
     id: "bharatha-tutorials-box-hill",
     name: "Bharatha Tutorials",
     localName: "பாரத பயிற்சி மையம்",
-    description: "Tamil language and cultural education for children. Offering Tamil reading, writing, classical music, and dance classes.",
+    description: "Language and cultural education for children. Offering language reading, writing, classical music, and dance classes.",
     category: "education",
     subcategory: "tutoring",
     location: {
@@ -147,7 +147,7 @@ export const businesses: Business[] = [
     communityOwned: true,
     verified: true,
     languages: ["English", "Tamil"],
-    tags: ["tamil-language", "cultural-education", "children"],
+    tags: ["language-classes", "cultural-education", "children"],
     features: ["weekend-classes", "performance-opportunities"],
     hours: {
       monday: "Closed",
@@ -164,8 +164,8 @@ export const businesses: Business[] = [
         businessId: "bharatha-tutorials-box-hill",
         author: "Meera V.",
         rating: 5,
-        title: "Great Tamil classes",
-        comment: "My daughter loves the Tamil classes here. Teachers are very dedicated and patient.",
+        title: "Great language classes",
+        comment: "My daughter loves the language classes here. Teachers are very dedicated and patient.",
         localComment: "என் மகளுக்கு இங்கு தமிழ் வகுப்புகள் மிகவும் பிடிக்கும்.",
         date: "2024-01-03",
         helpful: 4,
