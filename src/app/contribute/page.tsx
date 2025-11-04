@@ -37,14 +37,16 @@ export default function ContributePage() {
               <h3 className="text-xl font-semibold text-gray-900">Add a Business</h3>
             </div>
             <p className="text-gray-600 mb-4">
-              Know a local business that's not listed? Help us expand our directory by adding new businesses.
+              Know a local business that's not listed? Add it directly to our Google Sheet and it will appear on the website after our next sync.
             </p>
-            <Link 
-              href="/add-business"
+            <a 
+              href="https://docs.google.com/spreadsheets/d/1KEyAjqMvSF_B4VWxgQctBYCDAUmFWb9Skkc5LJDhZWw/edit#gid=0"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
             >
-              Add Business →
-            </Link>
+              Add to Google Sheet →
+            </a>
           </div>
 
           {/* Report Issues */}
@@ -58,14 +60,16 @@ export default function ContributePage() {
               <h3 className="text-xl font-semibold text-gray-900">Report Issues</h3>
             </div>
             <p className="text-gray-600 mb-4">
-              Found incorrect information or a business that's closed? Help us keep our directory accurate.
+              Found incorrect information or a business that's closed? Create an issue on our GitHub repository and we'll fix it quickly.
             </p>
-            <Link 
-              href="/contact"
+            <a 
+              href="https://github.com/Ponrajk22/ReferMakkale/issues/new"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium"
             >
-              Report Issue →
-            </Link>
+              Report on GitHub →
+            </a>
           </div>
 
           {/* Share Reviews */}
@@ -138,25 +142,29 @@ export default function ContributePage() {
           </div>
         </div>
 
-        {/* Contact Section */}
+        {/* Quick Links Section */}
         <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-8 text-center text-white">
-          <h2 className="text-2xl font-semibold mb-4">Have Questions?</h2>
+          <h2 className="text-2xl font-semibold mb-4">Ready to Contribute?</h2>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-            We're here to help! If you have questions about contributing or need assistance with the platform, don't hesitate to reach out.
+            Jump right in! Use these direct links to add businesses or report issues. Your contributions make a real difference.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/contact"
+            <a 
+              href="https://docs.google.com/spreadsheets/d/1KEyAjqMvSF_B4VWxgQctBYCDAUmFWb9Skkc5LJDhZWw/edit#gid=0"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-md font-medium transition-colors"
             >
-              Contact Us
-            </Link>
-            <Link 
-              href="/about"
+              📝 Add to Google Sheet
+            </a>
+            <a 
+              href="https://github.com/Ponrajk22/ReferMakkale/issues/new"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-white text-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-md font-medium transition-colors"
             >
-              Learn More
-            </Link>
+              🐛 Report Issue
+            </a>
           </div>
         </div>
 
