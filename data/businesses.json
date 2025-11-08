@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-08T03:21:00.462909",
+  "last_updated": "2025-11-08T04:07:41.473359",
   "businesses": [
     {
       "id": "maddy",
@@ -844,6 +844,68 @@
       "updatedAt": "2025-11-08",
       "createdBy": "google-sheets-sync",
       "description": "PipeSafe Plumbing. Very good service and after service support."
+    },
+    {
+      "id": "andrew",
+      "name": "Andrew",
+      "category": "garage-door-service",
+      "location": {
+        "address": "2/110 Elizabeth St, Melbourne VIC 3000",
+        "suburb": "2/110 Elizabeth St",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0417385483",
+        "website": "https://www.doorservicesvic.com.au/"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Garage Door Service"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-11-08",
+      "updatedAt": "2025-11-08",
+      "createdBy": "google-sheets-sync",
+      "description": "Door Services Victoria"
+    },
+    {
+      "id": "john-zipscreen",
+      "name": "John Zipscreen",
+      "category": "garage-door-service",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "407516598",
+        "website": "https://www.zipscreen.com.au/"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Garage Door Service"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2025-11-08",
+      "updatedAt": "2025-11-08",
+      "createdBy": "google-sheets-sync",
+      "description": "Zipscreen"
     }
   ]
 }

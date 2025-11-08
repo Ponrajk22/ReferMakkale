@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-08T03:21:00.465092",
+  "last_updated": "2025-11-08T04:07:41.475714",
   "categories": [
     {
       "id": "aircon-evaporative",
@@ -143,6 +143,17 @@
       "color": "#4ecdc4",
       "subcategories": [],
       "businessCount": 1
+    },
+    {
+      "id": "garage-door-service",
+      "name": "Garage Door Service",
+      "localName": "",
+      "slug": "garage-door-service",
+      "description": "Find trusted garage door service in Melbourne. Quality offerings from verified local businesses.",
+      "icon": "\ud83d\udcbc",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 2
     }
   ]
 }
