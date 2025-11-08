@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-04T03:25:03.030737",
+  "last_updated": "2025-11-08T05:06:30.732387",
   "suburbs": [
     {
       "name": "42 Victorking Drive",
@@ -9,6 +9,12 @@
     },
     {
       "name": "Pointcook",
+      "postcode": "",
+      "businessCount": 1,
+      "popularCategories": []
+    },
+    {
+      "name": "2/110 Elizabeth St",
       "postcode": "",
       "businessCount": 1,
       "popularCategories": []
