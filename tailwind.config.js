@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '480px',  // Extra small breakpoint for better mobile control
+      },
       colors: {
         primary: {
           blue: '#3b82f6',
