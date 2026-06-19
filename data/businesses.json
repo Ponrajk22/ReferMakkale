@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19T01:13:48.607806",
+  "last_updated": "2026-06-19T03:17:32.558272",
   "businesses": [
     {
       "id": "maddy",
@@ -910,7 +910,7 @@
     {
       "id": "lee",
       "name": "Lee",
-      "category": "",
+      "category": "handyman-services",
       "location": {
         "address": "",
         "suburb": "Melbourne",
@@ -918,20 +918,55 @@
         "state": "VIC",
         "city": "Melbourne"
       },
-      "contact": {},
+      "contact": {
+        "phone": "0416 564 111"
+      },
       "rating": 0,
       "reviewCount": 0,
       "communityOwned": false,
       "verified": false,
       "languages": [],
-      "tags": [],
+      "tags": [
+        "Handyman Services"
+      ],
       "features": [],
       "hours": {},
       "reviews": [],
       "createdAt": "2026-06-19",
       "updatedAt": "2026-06-19",
       "createdBy": "google-sheets-sync",
-      "description": "Lee"
+      "description": "Lee - Handyman Services"
+    },
+    {
+      "id": "pradeep-manoharan",
+      "name": "Pradeep Manoharan",
+      "category": "photographers-and-videographers",
+      "location": {
+        "address": "",
+        "suburb": "Melbourne",
+        "postcode": "",
+        "state": "VIC",
+        "city": "Melbourne"
+      },
+      "contact": {
+        "phone": "0430 130 682",
+        "website": "pradpixstudios.com.au"
+      },
+      "rating": 0,
+      "reviewCount": 0,
+      "communityOwned": false,
+      "verified": false,
+      "languages": [],
+      "tags": [
+        "Photographers & Videographers"
+      ],
+      "features": [],
+      "hours": {},
+      "reviews": [],
+      "createdAt": "2026-06-19",
+      "updatedAt": "2026-06-19",
+      "createdBy": "google-sheets-sync",
+      "description": "Pradpix Studios"
     }
   ]
 }
