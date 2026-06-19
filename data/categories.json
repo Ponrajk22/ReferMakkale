@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19T01:13:48.610189",
+  "last_updated": "2026-06-19T03:17:32.560709",
   "categories": [
     {
       "id": "aircon-evaporative",
@@ -156,11 +156,22 @@
       "businessCount": 2
     },
     {
-      "id": "",
-      "name": "",
+      "id": "handyman-services",
+      "name": "Handyman Services",
       "localName": "",
-      "slug": "",
-      "description": "Find trusted  in Melbourne. Quality services from verified local businesses.",
+      "slug": "handyman-services",
+      "description": "Find trusted handyman services in Melbourne. Quality offerings from verified local businesses.",
+      "icon": "\ud83d\udcbc",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 1
+    },
+    {
+      "id": "photographers-and-videographers",
+      "name": "Photographers & Videographers",
+      "localName": "",
+      "slug": "photographers-and-videographers",
+      "description": "Find trusted photographers & videographers in Melbourne. Quality services from verified local businesses.",
       "icon": "\ud83d\udcbc",
       "color": "#4ecdc4",
       "subcategories": [],
