@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18T23:37:25.232649",
+  "last_updated": "2026-06-19T01:13:48.610189",
   "categories": [
     {
       "id": "aircon-evaporative",
@@ -154,6 +154,17 @@
       "color": "#4ecdc4",
       "subcategories": [],
       "businessCount": 2
+    },
+    {
+      "id": "",
+      "name": "",
+      "localName": "",
+      "slug": "",
+      "description": "Find trusted  in Melbourne. Quality services from verified local businesses.",
+      "icon": "\ud83d\udcbc",
+      "color": "#4ecdc4",
+      "subcategories": [],
+      "businessCount": 1
     }
   ]
 }
